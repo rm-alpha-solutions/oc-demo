@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { ApiRole, Auth, BuyerProduct, Configuration, Me, Tokens } from "ordercloud-javascript-sdk";
+import fetchAdapter from "./fetch-adapter";
 
 const clientID = '311D3A03-B94F-460C-9B24-2BCEB54CC138'; //anonymous
 const scope: ApiRole[] = [
@@ -13,7 +14,7 @@ const scope: ApiRole[] = [
 Configuration.Set({
     baseApiUrl: 'https://sandboxapi.ordercloud.io',
     timeoutInMilliseconds: 20 * 1000,
-   // axiosAdapter: fetchAdapter,
+    axiosAdapter: fetchAdapter,
 });
 
 
