@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@haverstack/axios-fetch-adapter':
-    specifier: ^0.12.0
-    version: 0.12.0(axios@1.6.7)
   axios:
     specifier: 1.6.7
     version: 1.6.7
@@ -15,8 +12,8 @@ dependencies:
     specifier: 14.1.3
     version: 14.1.3(react-dom@18.2.0)(react@18.2.0)
   ordercloud-javascript-sdk:
-    specifier: 6.0.1
-    version: 6.0.1(axios@1.6.7)
+    specifier: ^6.0.4
+    version: 6.0.4(axios@1.6.7)
   react:
     specifier: ^18
     version: 18.2.0
@@ -94,14 +91,6 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
-
-  /@haverstack/axios-fetch-adapter@0.12.0(axios@1.6.7):
-    resolution: {integrity: sha512-+9WzqzeIvEC6Qrs6ImSqaX5P+eCrWbhzR+GoB7+p8/yqxmq59CPEo0uFuu0wINU9DQuJMzyER9WYdpYVwZV9rw==}
-    peerDependencies:
-      axios: ^0.21.1
-    dependencies:
-      axios: 1.6.7
-    dev: false
 
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -1927,8 +1916,8 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /ordercloud-javascript-sdk@6.0.1(axios@1.6.7):
-    resolution: {integrity: sha512-d4ZSBu3pSBOs41liYs3ZJ7iC5nFaNmluBW/uv/9ocIdQKAhsMEdky+0jD+qOVu7atUU+yNg6WJjKXEEif+0TxA==}
+  /ordercloud-javascript-sdk@6.0.4(axios@1.6.7):
+    resolution: {integrity: sha512-hCDn3vfv7G7WZa+p766cPHZ5S8z9uYhgqOPqWvSP+srZGbOZ58japBzNMP3Tvglzb2xvk7OZV74j8YsmiNPyMg==}
     engines: {node: '>=0.10'}
     peerDependencies:
       axios: ^1.1.3
